@@ -72,7 +72,7 @@ font-size:35px;
 }
 
 .home-novel-list{
-position:absolute;
+
   display:flex;
 
   flex-direction:column;
@@ -82,6 +82,8 @@ position:absolute;
   max-width:500px;
 
   margin-top:20px;
+   margin-left:auto;
+   margin-right:20px;
 }
 
 .home-novel-card{
