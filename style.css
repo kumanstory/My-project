@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 /* =========================
    GLOBAL
@@ -48,7 +47,7 @@ body{
 
   text-align:center;
 
-  font-size:85px;
+  font-size:65px;
 
   color:cyan;
 
