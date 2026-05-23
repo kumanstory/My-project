@@ -82,11 +82,11 @@ font-size:35px;
   max-width:500px;
 
   margin-top:20px;
-   margin:0 auto;
+   margin:auto;
 }
 
 .home-novel-card{
-width:100%;
+margin:auto;
   text-decoration:none;
 
   color:white;
