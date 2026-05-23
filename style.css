@@ -130,17 +130,17 @@ font-size:35px;
 
 .home-music-btn{
 
-  position:fixed;
+  position: absolute;
 
-  top:20px;
+  top:140px;
+left:50%;
+  
 
-  right:20px;
-
-  padding:10px 15px;
+  padding:10px 20px;
 
   border:none;
 
-  border-radius:10px;
+  border-radius:12px;
 
   background:cyan;
 
@@ -151,6 +151,7 @@ font-size:35px;
   cursor:pointer;
 
   z-index:1000;
+   box-shadow:0 0 15px cyan;
 }
 
 /* =========================
