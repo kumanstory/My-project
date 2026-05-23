@@ -101,32 +101,6 @@ function playNarrator(){
 
 function mulaiChapter(){
 
-  if(sedangJalan) return;
-
-  sedangJalan = true;
-
-  let music = document.getElementById("bg-music");
-
-  if(music){
-
-    music.volume = 0.03;
-
-    music.play();
-
-  }
-
-  speechSynthesis.cancel();
-
-  document.getElementById("story").innerHTML = "";
-
-  index = 0;
-
-  ketikText();
-
-  setTimeout(() => {
-
-    playNarrator();
-
-  },100);
+  document.getElementById("story").innerHTML = "TEST BERHASIL 😁";
 
 }
