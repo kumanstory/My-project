@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Chapter 1</title>
-    <link rel="stylesheet" href="style.css">
+<head>
 
-  </head>
-    
-  <body>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>Chapter 1</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="chapter-page">
+
   <div class="chapter-overlay">
 
-  <a href="novel1.html" class="back-btn">
-    ← Back
-  </a>
+    <a href="novel1.html"
+    class="chapter-back-btn">
 
-  <h1>CHAPTER 1</h1>
+      ← Back
 
-  <p class="chapter-title">
-    Awal Pertemuan
-  </p>
+    </a>
 
-  <button onclick="mulaiChapter()" class="chapter-play-btn">
+    <h1 class="chapter-heading">
+      CHAPTER 1
+    </h1>
 
-    ▶ PLAY STORY
+    <p class="chapter-subtitle">
+      Awal Pertemuan
+    </p>
 
-  </button>
+    <button onclick="mulaiChapter()"
+    class="chapter-play-btn">
 
-  <div class="chapter-story-box">
+      ▶ PLAY STORY
 
-    <p id="story"></p>
+    </button>
+
+    <div class="chapter-story-box">
+
+      <p id="story"></p>
+
+    </div>
+
+    <a href="chapter2.html"
+    class="chapter-next-btn">
+
+      NEXT CHAPTER →
+
+    </a>
 
   </div>
 
-  <a href="chapter2.html" class="next-btn">
+  <audio id="narrator">
 
-    NEXT CHAPTER →
+    <source
+    src="https://files.catbox.moe/xc5xkx.mp3"
+    type="audio/mp3">
 
-  </a>
+  </audio>
 
-</div>
+  <script src="chapter1.js?v=13"></script>
 
-<audio id="narrator" loop>
+</body>
 
-  <source src="http://files.catbox.moe/xc5xkx.mp3" type="audio/mp3">
-
-</audio>
-    <script  src="chapter1.js?v=13"></script>
-
-  </body>
-  
 </html>
