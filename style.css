@@ -359,8 +359,8 @@ right:20px;
 ========================= */
 
 .chapter-page{
-
-  background-image:url('http://files.catbox.moe/vvf6gy.png');
+   
+  background-image:url('https://files.catbox.moe/vvf6gy.png');
 
   background-size:cover;
 
@@ -397,6 +397,8 @@ right:20px;
   color:cyan;
 
   font-size:20px;
+
+  text-shadow:0 0 10px cyan;
 }
 
 /* =========================
