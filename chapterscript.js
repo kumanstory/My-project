@@ -27,7 +27,7 @@ function ketikText(){
     // auto scroll
     box.scrollTop = box.scrollHeight;
 
-    setTimeout(ketikText,40);
+    setTimeout(ketikText,60);
 
   } else {
 
