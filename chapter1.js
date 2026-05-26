@@ -52,6 +52,15 @@ Leon hanya bisa melihat kepergiannya dari jauh, membawa serta semua kata yang ta
 
 let index = 0;
 let typing = false;
+/* =========================
+   MASUK CHAPTER 1
+========================= */
+
+function mulaiStory(){
+
+  window.location.href = "chapter1.html";
+
+}
 function mulaiChapter(){
 
   if(typing) return;
