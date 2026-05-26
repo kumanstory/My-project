@@ -67,7 +67,7 @@ function mulaiChapter(){
 
   typing = true;
 
-  const audio = document.getElementById("narrator");
+  const audio = document.getElementById("narrator1");
 
   const story = document.getElementById("story");
 
