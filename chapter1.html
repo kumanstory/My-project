@@ -10,7 +10,8 @@
 
   <title>Chapter 1</title>
 
-  <link rel="stylesheet" href="chapterstyle.css">
+  <link rel="stylesheet"
+  href="chapterstyle.css">
 
 </head>
 
@@ -18,6 +19,7 @@
 
   <div class="chapter-overlay">
 
+    <!-- BACK BUTTON -->
     <a href="novel1.html"
     class="chapter-back-btn">
 
@@ -25,27 +27,42 @@
 
     </a>
 
+    <!-- TITLE -->
     <h1 class="chapter-heading">
       CHAPTER 1
     </h1>
 
     <p class="chapter-subtitle">
-      RASA YANG TAK TERUNGKAP
+      Awal Pertemuan
     </p>
 
-    <button onclick="mulaiChapter()"
-    class="chapter-play-btn">
-
-      ▶ PLAY STORY
-
-    </button>
-
+    <!-- STORY AREA -->
     <div class="chapter-story-box">
 
-      <p id="story"></p>
+      <div id="story"></div>
 
     </div>
 
+    <!-- BUTTONS -->
+    <div class="controls">
+
+      <button onclick="mulaiChapter()"
+      class="chapter-play-btn">
+
+        ▶ Play
+
+      </button>
+
+      <button onclick="pauseChapter()"
+      class="pause-btn">
+
+        ⏸ Pause
+
+      </button>
+
+    </div>
+
+    <!-- NEXT BUTTON -->
     <a href="chapter2.html"
     class="chapter-next-btn">
 
@@ -55,15 +72,24 @@
 
   </div>
 
-  <audio id="narrator1">
-
-    <source
-    src="https://files.catbox.moe/9hhz9h.mp3"
-    type="audio/mp3">
-
+  <!-- AUDIO -->
+  <audio id="narrator"
+  src="https://files.catbox.moe/f0gsvr.mp3">
   </audio>
 
-  <script src="chapter1.js?v=26"></script>
+  <!-- STORY TEXT -->
+  <script>
+
+const storyText = `
+
+ISI CERITA CHAPTER 1
+
+`;
+
+  </script>
+
+  <!-- JS -->
+  <script src="chapterscript.js"></script>
 
 </body>
 
