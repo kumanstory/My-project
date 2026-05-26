@@ -1,0 +1,165 @@
+/* =========================
+   CHAPTER PAGE
+========================= */
+
+.chapter-page{
+  background-image:url('https://files.catbox.moe/vvf6gy.png');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  min-height:100vh;
+  color:white;
+  overflow:hidden;
+}
+
+.chapter-overlay{
+  background:rgba(0,0,0,0.65);
+  min-height:100vh;
+  padding:25px;
+}
+
+/* =========================
+   STORY BOX
+========================= */
+
+.chapter-story-box{
+  height:400px;
+  margin-top:30px;
+  background:rgba(255,255,255,0.08);
+  border-radius:20px;
+  padding:25px;
+  backdrop-filter:blur(10px);
+
+  overflow-y:auto;
+
+  scroll-behavior:smooth;
+}
+
+/* hilangkan scrollbar */
+
+.chapter-story-box::-webkit-scrollbar{
+  display:none;
+}
+
+/* =========================
+   STORY TEXT
+========================= */
+
+#story{
+  line-height:2;
+  font-size:18px;
+  white-space:pre-line;
+}
+
+/* =========================
+   FLOATING BUTTONS
+========================= */
+
+.controls{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:20px;
+}
+
+.chapter-play-btn,
+.pause-btn{
+  padding:12px 20px;
+  border:none;
+  border-radius:15px;
+  background:cyan;
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+  box-shadow:0 0 15px cyan;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.chapter-heading{
+  text-align:center;
+  margin-top:40px;
+  font-size:50px;
+  color:cyan;
+}
+
+.chapter-subtitle{
+  text-align:center;
+  margin-top:10px;
+  color:#ddd;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.chapter-back-btn{
+
+  position:absolute;
+
+  top:30px;
+
+  left:30px;
+
+  padding:4px 10px;
+
+  background: transparant;
+
+  color:cyan;
+
+  text-decoration:none;
+
+  border-radius:15px;
+
+  font-weight:bold;
+font-size:12px;
+  box-shadow:0 0 15px cyan;
+
+  transition:0.3s;
+}
+
+.chapter-back-btn:hover{
+
+  transform:scale(1.05);
+
+  box-shadow:0 0 15px cyan;
+}
+
+/* =========================
+   NEXT BUTTON
+========================= */
+
+.chapter-next-btn{
+
+  position:absolute;
+
+  top:30px;
+
+  right:30px;
+
+  padding:5px 20px;
+
+  background: transparant;
+
+  color:cyan;
+
+  text-decoration:none;
+
+  border-radius:15px;
+
+  font-weight:bold;
+font-size:12px;
+  box-shadow:0 0 15px cyan;
+
+  transition:0.3s;
+}
+
+.chapter-next-btn:hover{
+
+  transform:scale(1.05);
+
+  box-shadow:0 0 25px cyan;
+}
