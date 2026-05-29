@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>Chapter 5</title>
+
+  <link rel="stylesheet"
+  href="chapterstyle.css">
+
+</head>
+
+<body class="chapter-page">
+
+  <div class="chapter-overlay">
+
+    <!-- BACK BUTTON -->
+    <a href="chapter4.html"
+    class="chapter-back-btn">
+
+      ← Back
+
+    </a>
+
+    <!-- TITLE -->
+    <h1 class="chapter-heading">
+      CHAPTER 5
+    </h1>
+
+    <p class="chapter-subtitle">
+      Di Bawah Cahaya dan Nada
+    </p>
+
+    <!-- STORY AREA -->
+    <div class="chapter-story-box">
+
+      <div id="story"></div>
+
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="controls">
+
+      <button onclick="mulaiChapter()"
+      class="chapter-play-btn">
+
+        ▶ Play
+
+      </button>
+
+      <button onclick="pauseChapter()"
+      class="pause-btn">
+
+        ⏸ Pause
+
+      </button>
+
+    </div>
+
+    <!-- NEXT BUTTON -->
+    <a href="chapter6.html"
+    class="chapter-next-btn">
+
+      NEXT CHAPTER →
+
+    </a>
+
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="narrator"
+  src="https://www.dropbox.com/scl/fi/yzscfdvf2rfmzsjabxv6z/chapter5.mp3?rlkey=55djwhv6lksxbx8sc8jnjlfpx&st=3l9fczl0&dl=0">
+  </audio>
+
+  <!-- STORY TEXT -->
+  <script>
+
+const storyText = `
+
+
+
+Waktu berjalan begitu cepat.
+
+Hari-hari di pabrik terasa berbeda sejak kehadiran Intan. Meski hubungan mereka tidak selalu mudah, perlahan keduanya mulai saling memahami. Intan yang dulu menjaga jarak kini lebih terbuka. Sementara Leon yang selama ini banyak memendam perasaan, mulai belajar mengungkapkan isi hatinya dengan lebih dewasa.
+
+Bulan demi bulan berlalu. Hingga akhirnya tiba kembali acara tahunan perusahaan. Sebuah malam yang selalu dinantikan para karyawan untuk melepas penat melalui tawa, kebersamaan, dan musik.
+
+Seperti tahun sebelumnya, band kecil milik Leon kembali dipercaya tampil di panggung utama.
+
+Namun malam itu terasa berbeda.
+
+Duduk di atas panggung, Leon memandangi lautan wajah yang diterangi cahaya lampu aula. Jemarinya perlahan menyentuh senar gitar, memainkan lagu baru yang ia tulis sendiri.
+
+Lagu itu bukan sekadar rangkaian nada.
+
+Di dalamnya tersimpan kisah tentang rasa yang pernah tertahan, tentang kehilangan yang mengajarkan arti ketulusan, dan tentang seseorang yang membuatnya kembali percaya pada cinta.
+
+Saat lagu itu berakhir, tepuk tangan bergemuruh memenuhi ruangan.
+
+Leon mengangkat wajahnya dan mencari satu sosok di tengah keramaian.
+
+Tak lama kemudian, matanya menemukan seseorang yang selama ini memenuhi pikirannya.
+
+Di belakang barisan penonton, Intan berdiri sambil menatapnya. Tatapannya lembut dan hangat. Tak ada lagi perasaan yang disembunyikan di sana.
+
+Di atas panggung, Indra sang vokalis tersenyum lebar. Ia mengambil mikrofon dan berkata kepada seluruh hadirin bahwa malam itu adalah malam yang spesial. Menurutnya, Leon ingin menyampaikan sesuatu yang penting.
+
+Mendengar itu, para penonton langsung bersorak dan bertepuk tangan.
+
+Leon tertawa kecil sebelum berdiri mengambil mikrofon.
+
+Tangannya sedikit gemetar, tetapi pandangannya tetap tertuju pada Intan.
+
+Dengan suara pelan namun jelas, Leon mulai berbicara.
+
+Dulu ia mengira bahwa cinta hanyalah soal keberanian untuk memiliki seseorang.
+
+Namun seiring waktu, ia menyadari bahwa cinta juga membutuhkan keberanian untuk menunggu, memaafkan, dan memperjuangkan seseorang tanpa mengharapkan balasan.
+
+Ia mengaku telah belajar banyak hal dari kehilangan, dari kesalahan, dan dari seseorang yang selama ini diam-diam selalu ia kagumi.
+
+Lalu dengan senyum kecil, Leon mengatakan bahwa malam itu ia ingin berhenti menunggu.
+
+Suasana ruangan mendadak hening.
+
+Semua mata tertuju kepadanya.
+
+Di antara kerumunan, Intan menatap tanpa berkedip. Matanya mulai berkaca-kaca.
+
+Leon melanjutkan kata-katanya.
+
+Ia mengatakan bahwa setiap nada yang dimainkan malam itu, dan setiap lirik dalam lagu yang baru saja dinyanyikan, semuanya terinspirasi oleh Intan.
+
+Tentang senyumnya.
+
+Tentang ketulusannya.
+
+Dan tentang tatapannya yang pertama kali membuat dirinya berani percaya lagi pada cinta.
+
+Leon mengakui bahwa ia tidak bisa menjanjikan dunia yang sempurna.
+
+Namun ia berjanji akan selalu berjuang untuk membuat Intan bahagia.
+
+Setelah mengucapkan kata-kata itu, Leon turun dari panggung.
+
+Langkahnya perlahan mendekati tempat Intan berdiri.
+
+Seluruh ruangan seolah menahan napas.
+
+Ketika akhirnya berada tepat di hadapan Intan, Leon berhenti.
+
+Ia menatap gadis itu dengan senyum tulus yang selama ini sulit ia ungkapkan.
+
+Dengan suara yang hangat, Leon bertanya apakah Intan bersedia menjadi bagian dari hidupnya.
+
+Bukan hanya sebagai kenangan masa lalu.
+
+Bukan hanya sebagai seseorang yang pernah singgah.
+
+Melainkan sebagai masa depan yang ingin mereka tulis bersama.
+
+Air mata perlahan mengalir di pipi Intan.
+
+Namun senyuman yang muncul di wajahnya sudah cukup menjadi jawaban.
+
+Dengan suara bergetar karena haru, Intan menjawab bahwa ia bersedia.
+
+Seketika ruangan dipenuhi sorak-sorai dan tepuk tangan.
+
+Teman-teman band di atas panggung ikut bersorak merayakan momen itu.
+
+Leon lalu memeluk Intan dengan lembut.
+
+Bukan sebagai pelukan kemenangan.
+
+Melainkan pelukan yang menandai berakhirnya perjalanan panjang penuh keraguan, sekaligus awal dari bab baru yang akan mereka jalani bersama.
+
+Dan di bawah cahaya panggung yang perlahan meredup, Leon akhirnya memahami satu hal.
+
+Setelah sekian lama mencari, cintanya telah menemukan tempat untuk berlabuh.
+
+`;
+
+  </script>
+
+  <!-- JS -->
+  <script src="chapterscript.js"></script>
+
+</body>
+  
+</html>
