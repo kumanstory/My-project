@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>Chapter 3</title>
+
+  <link rel="stylesheet"
+  href="chapterstyle.css">
+
+</head>
+
+<body class="chapter-page">
+
+  <div class="chapter-overlay">
+
+    <!-- BACK BUTTON -->
+    <a href="chapter2.html"
+    class="chapter-back-btn">
+
+      ← Back
+
+    </a>
+
+    <!-- TITLE -->
+    <h1 class="chapter-heading">
+      CHAPTER 3
+    </h1>
+
+    <p class="chapter-subtitle">
+      Jejak Baru diHati
+    </p>
+
+    <!-- STORY AREA -->
+    <div class="chapter-story-box">
+
+      <div id="story"></div>
+
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="controls">
+
+      <button onclick="mulaiChapter()"
+      class="chapter-play-btn">
+
+        ▶ Play
+
+      </button>
+
+      <button onclick="pauseChapter()"
+      class="pause-btn">
+
+        ⏸ Pause
+
+      </button>
+
+    </div>
+
+    <!-- NEXT BUTTON -->
+    <a href="chapter4.html"
+    class="chapter-next-btn">
+
+      NEXT CHAPTER →
+
+    </a>
+
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="narrator"
+  src="https://files.catbox.moe/link audio.mp3">
+  </audio>
+
+  <!-- STORY TEXT -->
+  <script>
+
+const storyText = `
+
+Jejak Baru di Hati
+
+  Sejak malam itu, setelah Velly benar-benar pergi, Leon banyak menghabiskan waktu di kamar. 
+Ia duduk di sudut ruangan kecil itu, ditemani gitar tua peninggalan ayahnya. 
+Senar-senar itu menjadi satu-satunya tempat ia berkeluh kesah, melodi-melodi yang lahir dari perasaan yang tak bisa ia ucapkan. 
+Dari sana, Leon mulai menulis lagu—tentang kehilangan, tentang rindu, dan tentang penyesalan yang tak sempat disampaikan.
+
+Hari-harinya berjalan sepi. 
+Hingga suatu pagi, ia memandang ibunya yang mulai menua, masih bekerja keras di kios kecil mereka. 
+Sebuah tekad tumbuh di hati Leon—ia ingin berubah, ingin menata hidupnya kembali. 
+Dengan restu ibunya, Leon memutuskan untuk merantau, mencari pekerjaan di luar kota.
+
+  Beberapa minggu kemudian, ia diterima bekerja di sebuah pabrik besar. 
+Awalnya, semua terasa asing. Namun, perlahan Leon mulai beradaptasi. 
+Ia tak lagi terlalu pendiam. 
+Lingkungan baru membuatnya lebih terbuka, lebih banyak tersenyum, dan akhirnya memiliki banyak teman. 
+
+  Setelah beberapa bulan Leon bekerja, Leon dan rekan kerjanya,membentuk sebuah band musik kecil untuk mengisi waktu luang di kahir pekan.
+
+Sampai akhirnya, pada malam acara akhir tahun, Leon tampil di atas panggung bersama band-nya. 
+Lampu-lampu sorot menari di antara tawa dan tepuk tangan penonton. 
+Dan di antara kerumunan itu, sepasang mata menatapnya tanpa henti—mata milik seorang gadis bernama Intan.
+
+  Seusai acara, Leon tak bisa menghapus bayangan wajah itu dari pikirannya. 
+Ia mulai mencari tahu tentang Intan, dan ternyata gadis itu bekerja di divisi sebelah tempatnya bertugas. 
+Takdir seolah bermain lembut, karena beberapa minggu kemudian, sebuah proyek gabungan mempertemukan mereka dalam satu tim.
+
+Dari situlah semuanya dimulai. 
+Leon dan Intan sering berdiskusi soal pekerjaan lewat pesan singkat, namun obrolan mereka perlahan melebar ke hal-hal kecil—tentang musik, makanan, bahkan hal-hal konyol yang membuat keduanya tertawa.
+
+Ada sesuatu yang hangat tumbuh di hati Leon. 
+Namun di balik senyum itu, ia masih menyimpan sedikit keraguan. 
+Bayangan masa lalu kadang datang tiba-tiba, membuatnya takut kehilangan lagi. 
+Tapi kali ini berbeda—Intan tidak menuntut apa-apa. 
+Ia hanya hadir, mendengarkan, dan membuat Leon merasa hidup kembali.
+
+Dan tanpa ia sadari, cinta mulai menemukan jalannya sekali lagi.
+
+  Tatapan yang Tak Sempat Terucap
+
+Siang itu kantin terasa sedikit lebih ramai dari biasanya. Suara obrolan karyawan bercampur dengan denting sendok dan piring yang saling beradu. Leon duduk di sudut meja dekat jendela, menyantap makan siangnya perlahan. Ia lebih sering memilih tempat yang agak sepi, menikmati waktu istirahat tanpa banyak bicara.
+
+Tak lama kemudian, Reva datang dan duduk di depannya.
+“Leon, progress untuk bagian laporan udah kamu kirim ke tim Intan, belum?” tanya Reva sambil membuka bekal makanannya.
+
+Leon mengangguk pelan. “Belum semua. Masih ada data dari warehouse yang belum masuk. Nanti sore aku kirim.”
+Obrolan mereka pun hanya seputar pekerjaan — ringan tapi fokus. Sesekali Reva tersenyum kecil mendengar gurauan sederhana dari Leon yang jarang sekali terlihat berbicara banyak.
+
+Leon tidak menyadari bahwa di sisi lain ruangan, Intan duduk tidak jauh dari mereka. Ia diam, matanya sesekali berhenti pada wajah Leon yang tampak tenang mendengarkan Reva bicara. Ada sesuatu yang menekan dadanya — rasa yang tidak bisa ia jelaskan. Saat Reva tertawa kecil karena candaan ringan Leon, Intan merasakan sesuatu yang mirip dengan... cemburu.
+
+Ia buru-buru membereskan makanannya dan pergi meninggalkan kantin, tanpa menoleh lagi.
+
+Leon sempat melihat sekilas sosok Intan yang berjalan keluar, namun tidak terlalu memikirkannya. Sampai malam tiba — saat pikirannya tak kunjung tenang. Entah kenapa, bayangan tatapan singkat Intan di kantin tadi terus terulang di benaknya.
+
+Malam itu, setelah berbaring cukup lama menatap langit-langit kamar, Leon akhirnya membuka ponselnya dan menulis pesan.
+
+Leon:"
+Kamu tadi makan di kantin juga ya? Kayaknya sempat lihat kamu deh".
+
+Intan:"
+Hehe… iya, bentar doang. Ramai banget, jadi langsung keluar".
+
+Leon:"
+Oh gitu… aku kira kamu nggak makan di situ".
+
+Intan:"
+Biasanya nggak sih. Tapi tadi lapar banget 😅".
+
+(Beberapa detik tanpa balasan. Suasana chat terasa sedikit canggung. Leon menatap layar cukup lama, ragu untuk melanjutkan.)
+
+Leon:"
+Eh, tadi aku ngobrol sama Reva cuma bahas project, ya. Takutnya kamu salah paham".
+
+Intan:"
+😅 Emang kenapa aku harus salah paham?"
+
+Leon:"
+Nggak, cuma… kamu tiba-tiba pergi waktu itu. Jadi aku kira kamu… ya, agak nggak enak aja."
+
+Intan:"
+Oh… aku cuma buru-buru balik ke ruangan, Leon. Nggak ada apa-apa kok 🙂"
+Leon:"
+Oke… aku pikir kamu ngelihatnya lain. Hehe maaf ya kalau aku kepikiran yang aneh-aneh."
+(Hening beberapa saat. Lalu Intan membalas…)
+
+Intan:"
+Kamu terlalu banyak mikir, Leon 😌 tapi… makasih udah ngejelasin."
+
+Leon:"
+Hehe iya, kebiasaan lama. Gampang mikir yang nggak-nggak."
+
+Intan:"
+Gapapa, itu tandanya kamu masih punya hati."
+
+(Percakapan berhenti di sana. Tapi malam itu, Leon tersenyum kecil sebelum menutup matanya — ada rasa hangat yang ia sendiri tak tahu dari mana datangnya.)
+
+  Jarak yang Tak Terucap
+
+Beberapa minggu berlalu sejak percakapan malam itu. Hubungan Leon dan Intan terasa semakin hangat. Mereka sering berpapasan di kantor, saling menyapa, kadang tertawa kecil saat membahas hal-hal sepele di sela pekerjaan. Leon merasa, hidupnya mulai berwarna lagi. Senyum Intan yang sederhana bisa membuat harinya lebih ringan.
+
+Namun perlahan, ada sesuatu yang berubah. Intan tak lagi sering menghampiri. Pesan Leon kadang dibalas singkat, atau bahkan lama sekali baru dibalas. Di kantor, tatapan Intan yang dulu hangat kini terasa dingin. Leon tidak tahu apa yang salah.
+
+Suatu sore, saat semua orang sudah pulang, Leon masih duduk di mejanya, menatap layar laptop yang tak kunjung dimatikan. Ia mencoba menenangkan diri, tapi hatinya terus bertanya—apa aku salah bicara? apa Intan mulai bosan?
+
+Padahal di sisi lain, Intan sedang berjuang dengan pikirannya sendiri. Ia punya seseorang di masa lalu yang belum sepenuhnya ia lepaskan. Hubungan mereka sudah lama retak, tapi belum benar-benar berakhir. Dan Intan, dengan sikapnya yang selalu menjaga hati orang lain, memilih menjauh agar tak melukai siapa pun—terutama Leon.
+
+Malamnya, Leon merasa kesepian. Ia membuka media sosial hanya untuk mengalihkan pikiran. Di sana, ada akun seorang gadis yang sering muncul di kolom komentar musik yang sama dengannya. Gadis itu ramah dan sering melempar candaan. Dalam keisengan yang tidak ia pikir panjang, Leon mengetik pesan:
+
+Leon:
+Kalau aku serius, kamu mau gak jadi pacarku?
+
+Ia hanya berniat bercanda. Tapi beberapa menit kemudian, notifikasi masuk.
+
+Gadis itu membalas:
+Serius nih? 😳
+Kalau iya… ya, aku mau 😊
+
+Leon terdiam. Jantungnya berdetak cepat—antara kaget dan bingung. Ia tak menyangka candaan itu diterima sungguh-sungguh. Dalam hati, ia mencoba menertawakan kebodohannya sendiri. Namun setelah beberapa hari, gadis itu benar-benar memperlakukan Leon seperti kekasih. Chat tiap pagi, ucapan selamat malam, dan perhatian yang datang tanpa ia minta.
+
+Di kantor, Leon mulai menyadari Intan makin menjaga jarak. Hingga suatu hari, Reva dengan nada iseng berkata,
+“Eh, Leon, itu akun kamu ya yang update status ‘lagi jatuh cinta’? Wah, siapa tuh ceweknya?”  
+
+Leon hanya tersenyum kikuk. Tapi dari sudut ruangan, Intan yang mendengar percakapan itu tampak menunduk. Ada sesuatu di matanya—entah kecewa, entah pasrah.
+
+Sejak hari itu, mereka jarang bicara lagi.  
+Leon tahu, mungkin Intan salah paham. Tapi untuk pertama kalinya, ia benar-benar tak tahu harus menjelaskan dari mana.
+
+Dan malam itu, saat layar ponselnya kembali menyala dengan pesan dari gadis di media sosial, Leon hanya menatapnya lama, tanpa membalas.  
+Karena di hatinya, yang ia pikirkan hanyalah satu nama "Intan".
+
+
+
+`;
+
+  </script>
+
+  <!-- JS -->
+  <script src="chapterscript.js"></script>
+
+</body>
+  
+</html>
