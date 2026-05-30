@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 /* =========================
    GLOBAL
@@ -26,67 +27,62 @@ body{
 
   background:url('https://i.ibb.co/y3n5TV3/file-00000000fcac71fa885d71f224d404d6.png')
   no-repeat center center/cover;
-background-attachment:fixed;
+
   min-height:100vh;
 
   color:white;
 }
 
 .home-overlay{
-position:relative;
+
   background:rgba(0,0,0,0.75);
 
   min-height:100vh;
 
   padding:30px 20px;
-   display:flex;
-   flex-direction:column;
-   justify-content:center;
 }
 
 .home-title{
 
   text-align:center;
 
-  font-size:70px;
-margin-top:120px;
+  font-size:45px;
+
   color:cyan;
-padding:25px;
+
   margin-top:30px;
 
   letter-spacing:3px;
 
   text-shadow:0 0 15px cyan;
-   display:block;
-   width:100%;
 }
 
 .home-subtitle{
 
   text-align:center;
-font-size:20px;
+
   color:#ccc;
 
-  margin-top:20px;
+  margin-top:10px;
 
-  margin-bottom:70px;
+  margin-bottom:50px;
 }
 
 .home-novel-list{
-width:90%;
+
   display:flex;
 
   flex-direction:column;
 
   gap:25px;
 
-  max-width:800px;
+  max-width:500px;
 
-   margin:0 auto;
+  margin:auto;
 }
 
 .home-novel-card{
-margin:auto;
+
   text-decoration:none;
 
   color:white;
@@ -97,7 +93,7 @@ margin:auto;
 
   backdrop-filter:blur(10px);
 
-  padding:35px;
+  padding:25px;
 
   border-radius:25px;
 
@@ -129,13 +125,13 @@ margin:auto;
    MUSIC BUTTON
 ========================= */
 
-.home-music-btn{
+.music-btn{
 
-  position: absolute;
+  position:fixed;
 
   top:20px;
-right:20px;
-  
+
+  right:20px;
 
   padding:10px 15px;
 
@@ -152,7 +148,6 @@ right:20px;
   cursor:pointer;
 
   z-index:1000;
-   box-shadow:0 0 15px cyan;
 }
 
 /* =========================
@@ -190,7 +185,7 @@ right:20px;
 
 .novel-back-btn{
 
-
+  position:absolute;
 
   top:20px;
 
@@ -229,7 +224,7 @@ right:20px;
 
 .novel-title{
 
-  font-size:35px;
+  font-size:42px;
 
   color:cyan;
 
@@ -359,8 +354,8 @@ right:20px;
 ========================= */
 
 .chapter-page{
-   
-  background-image:url('https://files.catbox.moe/vvf6gy.png');
+
+  background-image:url('LINK_BACKGROUND');
 
   background-size:cover;
 
@@ -397,8 +392,6 @@ right:20px;
   color:cyan;
 
   font-size:20px;
-
-  text-shadow:0 0 10px cyan;
 }
 
 /* =========================
@@ -505,4 +498,13 @@ right:20px;
   color:cyan;
 
   font-size:20px;
+}
+.novel-cover{
+
+  width:95%;
+
+  max-width:600px;
+
+  margin:35px auto 25px auto;
+
 }
