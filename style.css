@@ -509,7 +509,7 @@ body{
  overflow:hidden;
    border-radius:20px;
 }
-.novel-cover img{
+.cover{
    width:100%;
 height:280px;
    object-fit:cover;
