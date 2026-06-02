@@ -506,3 +506,32 @@ body{
     margin:40px auto 20px auto;
     border-radius:20px;
 }
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 20px;
+
+    background:rgba(0,0,0,0.2);
+    backdrop-filter:blur(10px);
+
+    z-index:9999;
+}
+
+.nav-logo{
+    color:#00ffff;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.nav-menu{
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+}
