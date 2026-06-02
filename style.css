@@ -122,35 +122,6 @@ body{
 }
 
 /* =========================
-   MUSIC BUTTON
-========================= */
-
-.home-music-btn{
-
-  position:fixed;
-
-  top:20px;
-
-  right:20px;
-
-  padding:10px 15px;
-
-  border:none;
-
-  border-radius:10px;
-
-  background:cyan;
-
-  color:black;
-
-  font-weight:bold;
-
-  cursor:pointer;
-
-  z-index:1000;
-}
-
-/* =========================
    NOVEL PAGE
 ========================= */
 
@@ -533,5 +504,24 @@ body{
 .nav-menu{
     color:white;
     font-size:24px;
+    cursor:pointer;
+}
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.nav-music{
+    background:none;
+    border:none;
+    color:cyan;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.nav-menu{
+    color:white;
+    font-size:28px;
     cursor:pointer;
 }
