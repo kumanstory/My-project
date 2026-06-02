@@ -524,3 +524,51 @@ backdrop-filter:blur(12px);
     font-size:28px;
     cursor:pointer;
 }
+
+.side-menu{
+
+    position:fixed;
+
+    top:0;
+
+    right:-250px;
+
+    width:250px;
+
+    height:100vh;
+
+    background:rgba(0,0,0,0.95);
+
+    backdrop-filter:blur(15px);
+
+    padding-top:80px;
+
+    transition:0.3s;
+
+    z-index:9998;
+}
+
+.side-menu.active{
+
+    right:0;
+}
+
+.side-menu a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:20px;
+
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.side-menu a:hover{
+
+    background:rgba(0,255,255,0.1);
+
+    color:cyan;
+}
