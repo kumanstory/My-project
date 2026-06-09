@@ -121,6 +121,7 @@ function mulaiChapter(){
     playNarrator();
 
   },100);
+}
 
 function toggleMenu(){
 
@@ -129,6 +130,6 @@ function toggleMenu(){
     .classList
     .toggle("active");
 
-}
+
 
 }
