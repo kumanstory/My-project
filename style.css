@@ -498,12 +498,19 @@ body{
 }
 .novel-cover{
 
-  width:80%;
+  display:block;
 
-  max-width:250px;
+  width:85%;
+
+  max-width:320px;
+
+  height:auto;
 
   margin:35px auto 25px auto;
 
+  border-radius:20px;
+
+  box-shadow:0 0 20px rgba(0,255,255,0.3);
 }
 #spiralCanvas{
   position:fixed;
