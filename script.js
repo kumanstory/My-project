@@ -126,7 +126,7 @@ function mulaiChapter(){
 function toggleMenu(){
 
   document
-    .getElementById("sideMenu")
+    .getElementById("sidemenu")
     .classList
     .toggle("active");
 
