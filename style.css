@@ -530,3 +530,113 @@ body{
 .side-menu{
   z-index:200;
 }
+
+
+.navbar{
+
+  position:fixed;
+
+  top:0;
+
+  left:0;
+
+  width:100%;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:12px 20px;
+
+  background:rgba(0,0,0,0.6);
+
+  backdrop-filter:blur(10px);
+
+  z-index:1000;
+}
+
+.nav-logo{
+
+  color:cyan;
+
+  font-size:24px;
+
+  font-weight:bold;
+
+  text-shadow:0 0 10px cyan;
+}
+
+.nav-right{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:15px;
+}
+
+.nav-music,
+.nav-menu{
+
+  background:rgba(255,255,255,0.1);
+
+  border:none;
+
+  color:white;
+
+  font-size:22px;
+
+  cursor:pointer;
+
+  padding:8px 12px;
+
+  border-radius:10px;
+}
+
+.side-menu{
+
+  position:fixed;
+
+  top:65px;
+
+  right:-250px;
+
+  width:220px;
+
+  height:auto;
+
+  background:rgba(0,0,0,0.9);
+
+  backdrop-filter:blur(10px);
+
+  transition:0.3s;
+
+  padding:20px;
+
+  z-index:999;
+}
+
+.side-menu.active{
+
+  right:0;
+}
+
+.side-menu a{
+
+  display:block;
+
+  color:white;
+
+  text-decoration:none;
+
+  padding:12px 0;
+
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.home-overlay{
+
+  padding-top:90px;
+}
