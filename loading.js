@@ -84,6 +84,3 @@ function animate() {
 
 animate();
 
-setTimeout(() => {
-    window.location.href = "index.html";
-}, 6000);
