@@ -137,6 +137,7 @@ setTimeout(() => {
 
     const loading =
         document.getElementById("loading-screen");
+if (!loading) return;
 
     loading.style.transition =
         "opacity 1.5s";
