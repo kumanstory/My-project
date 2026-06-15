@@ -133,3 +133,20 @@ function toggleMenu(){
 
 
 }
+setTimeout(() => {
+
+    const loading =
+        document.getElementById("loading-screen");
+
+    loading.style.transition =
+        "opacity 1.5s";
+
+    loading.style.opacity = "0";
+
+    setTimeout(() => {
+
+        loading.remove();
+
+    }, 1500);
+
+}, 5000);
