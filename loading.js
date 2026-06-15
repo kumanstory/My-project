@@ -1,3 +1,17 @@
+
+if (sessionStorage.getItem("loaded")) {
+
+    const loading =
+        document.getElementById("loading-screen");
+
+    loading.remove();
+
+} else {
+
+    sessionStorage.setItem("loaded", "true");
+
+}
+
 const canvas = document.getElementById("spiral");
 const ctx = canvas.getContext("2d");
 
