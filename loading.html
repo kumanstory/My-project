@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Loading.html</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kuman Stories</title>
+
+<style>
+body{
+    margin:0;
+    background:black;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    flex-direction:column;
+    color:white;
+}
+
+#title{
+    font-size:32px;
+    letter-spacing:5px;
+    margin-top:20px;
+}
+</style>
+
+</head>
+<body>
+
+<canvas id="spiral"></canvas>
+
+<div>
+    <span id="title"></span>
+    <span id="cursor">|</span>
+</div>
+
+  <script>
+const text = "KUMAN STORIES";
+const title = document.getElementById("title");
+
+let i = 0;
+
+function ketik(){
+    if(i < text.length){
+        title.textContent += text[i];
+        i++;
+        setTimeout(ketik,150);
+    }
+}
+
+ketik();
+</script>
+
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
